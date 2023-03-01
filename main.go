@@ -31,11 +31,11 @@ func main() {
 	dbConn, err := database.NewDatabaseConnection(
 		fmt.Sprintf(
 			"%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
-			os.Getenv("db.USERNAME"),
-			os.Getenv("db.PASSWORD"),
-			os.Getenv("db.HOSTNAME"),
-			os.Getenv("db.PORT"),
-			os.Getenv("db.DATABASE"),
+			os.Getenv("DB_USER"),
+			os.Getenv("DB_PASSWORD"),
+			os.Getenv("DB_HOST"),
+			os.Getenv("DB_PORT"),
+			os.Getenv("DB_DATABASE"),
 		),
 	)
 
