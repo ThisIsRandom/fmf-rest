@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/oliver7100/fmf-rest/database"
+	"github.com/thisisrandom/fmf-rest/database"
 )
 
 type UserController struct {

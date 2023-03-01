@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/oliver7100/fmf-rest/database"
-	"github.com/oliver7100/fmf-rest/internal"
+	"github.com/thisisrandom/fmf-rest/database"
+	"github.com/thisisrandom/fmf-rest/internal"
 )
 
 type TaskController struct {

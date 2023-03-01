@@ -1,4 +1,4 @@
-module github.com/oliver7100/fmf-rest
+module github.com/thisisrandom/fmf-rest
 
 go 1.19
 

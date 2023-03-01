@@ -6,9 +6,9 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	jwtware "github.com/gofiber/jwt/v3"
-	"github.com/oliver7100/fmf-rest/controllers"
-	"github.com/oliver7100/fmf-rest/database"
-	"github.com/oliver7100/fmf-rest/internal"
+	"github.com/thisisrandom/fmf-rest/controllers"
+	"github.com/thisisrandom/fmf-rest/database"
+	"github.com/thisisrandom/fmf-rest/internal"
 )
 
 func main() {
