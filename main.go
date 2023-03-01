@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+	"os"
+
 	"github.com/gofiber/fiber/v2"
 	jwtware "github.com/gofiber/jwt/v3"
 	"github.com/oliver7100/fmf-rest/controllers"
@@ -26,7 +29,14 @@ func main() {
 	}
 
 	dbConn, err := database.NewDatabaseConnection(
-		"root:rootroot@tcp(localhost:3306)/fmf?charset=utf8mb4&parseTime=True&loc=Local",
+		fmt.Sprintf(
+			"%s:%s@tcp(%s:%s)/%s?charset=utf8mb4&parseTime=True&loc=Local",
+			os.Getenv("db.USERNAME"),
+			os.Getenv("db.PASSWORD"),
+			os.Getenv("db.HOSTNAME"),
+			os.Getenv("db.PORT"),
+			os.Getenv("db.DATABASE"),
+		),
 	)
 
 	if err != nil {
