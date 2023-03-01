@@ -24,4 +24,10 @@ EXPOSE 3000
 
 USER nonroot:nonroot
 
+ENV DB_USER=doadmin
+ENV DB_PASSWORD=AVNS_6w64qBFeRo1FGhSsE24
+ENV DB_HOST=db-mysql-fmf-do-user-7517862-0.b.db.ondigitalocean.com
+ENV DB_PORT=25060
+ENV DB_DATABASE=fmf
+
 ENTRYPOINT ["/docker-gs-ping"]
